@@ -2,21 +2,29 @@
 // =================
 
 .component {
-    .dragAndDrop-droppables-container .dragAndDrop-item-draggable img {
-        background: transparent;
-    }
+  .dragAndDrop-droppables-container .dragAndDrop-item-draggable img {
+    background: transparent;
+  }
 
-    .dragAndDrop-inner .dragAndDrop-dummy {
-        background-color: rgba(255,255,255,0.7);
-    }
+  .dragAndDrop-inner .dragAndDrop-dummy {
+    background-color: rgba(255,255,255,0.7);
+  }
 
-    .flipcard-item-back-body {
-        font-size: 55px;
-    }
+  .flipcard-item-back-body {
+    font-size: 55px;
+  }
 
-    .accordion-item-text {
-        font-size: 3em;
-    }
+  .accordion-item-text {
+    font-size: 3em;
+  }
+
+  .flipper-inner .flipper-item .flipper-item-body {
+    font-size: 3.2em;
+  }
+
+  .flipper-inner .flipper-item .flipper-item-title {
+    font-size: 2em;
+  }
 }
 
 
@@ -26,4 +34,18 @@
     @media all and (max-width: @device-width-small) {
         font-size: 60px;
     }
+}
+
+// Menu styling
+.menu .menu-item-button button i {
+    font-size: 1.5em;
+    animation-name: changebutton;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changebutton {
+  0% { transform: rotateX(0deg) }
+  25% { transform: rotateX(180deg) }
+  50% { transform: rotateX(0deg) }
 }
